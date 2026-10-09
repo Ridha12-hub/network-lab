@@ -1,0 +1,61 @@
+cat > cisco << 'EOF'
+RIPv2 CONFIGURATION
+
+Router> enable
+Router# configure terminal
+Router(config)# router rip
+Router(config-router)# version 2
+Router(config-router)# no auto-summary
+Router(config-router)# network 172.16.0.0
+Router(config-router)# exit
+Router(config)# exit
+Router# copy running-config startup-config
+
+
+OSPF CONFIGURATION - 2621A
+
+2621A> enable
+2621A# configure terminal
+2621A(config)# router ospf 1
+2621A(config-router)# network 172.16.10.0 0.0.0.255 area 0
+2621A(config-router)# exit
+2621A(config)# exit
+2621A# copy running-config startup-config
+
+
+OSPF CONFIGURATION - 2501A
+
+2501A> enable
+2501A# configure terminal
+2501A(config)# router ospf 1
+2501A(config-router)# network 172.16.10.0 0.0.0.255 area 0
+2501A(config-router)# network 172.16.20.0 0.0.0.255 area 0
+2501A(config-router)# exit
+2501A(config)# exit
+2501A# copy running-config startup-config
+
+
+OSPF CONFIGURATION - 2501B
+
+2501B> enable
+2501B# configure terminal
+2501B(config)# router ospf 1
+2501B(config-router)# network 172.16.20.0 0.0.0.255 area 0
+2501B(config-router)# network 172.16.30.0 0.0.0.255 area 0
+2501B(config-router)# network 172.16.40.0 0.0.0.255 area 0
+2501B(config-router)# exit
+2501B(config)# exit
+2501B# copy running-config startup-config
+
+
+OSPF CONFIGURATION - 2501C
+
+2501C> enable
+2501C# configure terminal
+2501C(config)# router ospf 1
+2501C(config-router)# network 172.16.40.0 0.0.0.255 area 0
+2501C(config-router)# network 172.16.50.0 0.0.0.255 area 0
+2501C(config-router)# exit
+2501C(config)# exit
+2501C# copy running-config startup-config
+EOF
