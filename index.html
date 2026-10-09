@@ -1,18 +1,15 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Networks Lab</title>
+    <title>Computer Networks Lab Programs</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background: #f4f7fb;
+            background: #f1f5f9;
+            margin: 0;
             color: #1e293b;
         }
 
@@ -20,74 +17,53 @@
             background: #12345a;
             color: white;
             text-align: center;
-            padding: 35px 20px;
-        }
-
-        header h1 {
-            margin: 0 0 10px;
-        }
-
-        header p {
-            margin: 0;
-            color: #dbeafe;
+            padding: 30px 15px;
         }
 
         main {
-            max-width: 850px;
+            max-width: 800px;
             margin: 30px auto;
-            padding: 0 18px;
+            padding: 0 15px;
         }
 
-        h2 {
-            color: #12345a;
-            margin-top: 30px;
-        }
-
-        .file-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 15px;
-        }
-
-        .file {
+        .program {
             background: white;
             padding: 18px;
-            border-radius: 10px;
-            border: 1px solid #dbe3ee;
-            box-shadow: 0 2px 6px #00000008;
+            margin: 12px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
         }
 
-        .file h3 {
-            margin: 0 0 10px;
-            font-size: 17px;
-            overflow-wrap: anywhere;
-        }
-
-        .file p {
-            color: #64748b;
-            font-size: 14px;
+        .program h3 {
+            margin: 0;
         }
 
         a {
             display: inline-block;
-            margin: 5px 8px 0 0;
-            padding: 9px 12px;
             background: #2563eb;
             color: white;
+            padding: 9px 12px;
             text-decoration: none;
-            border-radius: 6px;
-            font-size: 14px;
+            border-radius: 5px;
+            margin: 3px;
         }
 
         a:hover {
             background: #1d4ed8;
         }
 
+        h2 {
+            color: #12345a;
+        }
+
         footer {
             text-align: center;
-            padding: 25px;
-            color: #64748b;
-            font-size: 13px;
+            padding: 20px;
         }
     </style>
 </head>
@@ -95,9 +71,102 @@
 
 <header>
     <h1>Computer Networks Laboratory</h1>
-    <p>Lab Programs, Source Code and Configuration Files</p>
     <p>Department of Computer Engineering</p>
+    <p>Programs, Source Code and Configuration Files</p>
 </header>
 
 <main>
-    <h2>C Programs</h
+    <h2>C Programs</h2>
+
+    <div class="program">
+        <h3>UDP Client</h3>
+        <div>
+            <a href="udp-client.c" target="_blank">View Code</a>
+            <a href="udp-client.c" download>Download</a>
+        </div>
+    </div>
+
+    <div class="program">
+        <h3>UDP Translator</h3>
+        <div>
+            <a href="udp-translator.c" target="_blank">View Code</a>
+            <a href="udp-translator.c" download>Download</a>
+        </div>
+    </div>
+
+    <div class="program">
+        <h3>UDP File Server</h3>
+        <div>
+            <a href="udp-file.c" target="_blank">View Code</a>
+            <a href="udp-file.c" download>Download</a>
+        </div>
+    </div>
+
+    <div class="program">
+        <h3>UDP File Client</h3>
+        <div>
+            <a href="udp-file-client.c" target="_blank">View Code</a>
+            <a href="udp-file-client.c" download>Download</a>
+        </div>
+    </div>
+
+    <div class="program">
+        <h3>UDP Time Server</h3>
+        <div>
+            <a href="udp-time.c" target="_blank">View Code</a>
+            <a href="udp-time.c" download>Download</a>
+        </div>
+    </div>
+
+    <div class="program">
+        <h3>UDP Time Client</h3>
+        <div>
+            <a href="udp-time-client.c" target="_blank">View Code</a>
+            <a href="udp-time-client.c" download>Download</a>
+        </div>
+    </div>
+
+    <h2>Configuration Files</h2>
+
+    <div class="program">
+        <h3>Cisco Routing Configurations</h3>
+        <div>
+            <a href="cisco.txt" target="_blank">View File</a>
+            <a href="cisco.txt" download>Download</a>
+        </div>
+    </div>
+
+    <h2>Sample Text Files</h2>
+
+    <div class="program">
+        <h3>Sample 1</h3>
+        <div>
+            <a href="sample1.txt" target="_blank">View File</a>
+            <a href="sample1.txt" download>Download</a>
+        </div>
+    </div>
+
+    <div class="program">
+        <h3>Sample 2</h3>
+        <div>
+            <a href="sample2.txt" target="_blank">View File</a>
+            <a href="sample2.txt" download>Download</a>
+        </div>
+    </div>
+
+    <div class="program">
+        <h3>Lab Notes</h3>
+        <div>
+            <a href="notes.txt" target="_blank">View File</a>
+            <a href="notes.txt" download>Download</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    Computer Networks Laboratory
+</footer>
+
+</body>
+</html>
+```
